@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>Inserts</title>
+	
+    <style>
+	
+		div{
+			
+			padding:20px;
+			
+		}
+		
+		.container{
+		
+			margin: 20px;
+			
+			background-color:rgb(0,255,0);
+			
+			width: 500px;
+			
+			height: 500px;
+			
+		}
+	
+	</style>
+    
+	<script src="jquery-3.1.1.js"></script>
+	<script src="script.js"></script>
+
+</head>
+
+
+
+<body>
+
+	<div class="container">
+
+        <div> What is your name?
+        
+            <input id="text" type="text" />
+        
+        </div>
+        
+        <div>How old are you?
+        
+            <input id="age" type="number" style="width:50px" />  years old
+        
+        </div>
+        
+        <div> What Emmaus House are you?
+        
+            <select id="house"> 
+                    
+            </select>
+        
+        </div>
+        
+        <div>How far can you kick a drop punt?
+
+            <input id="kickDistance" type="range" min="0" max="65"  step="5" onchange="updateTextInput(this.value)"/>
+        	<div style="float:right" type="text" id="textInput" value="">
+        </div>
+        
+        <div>What is your gender? <br />
+        
+            male<input name="gender" type="radio" value="male" checked="checked" />
+            female<input name="gender" type="radio" value="female" />
+        
+        </div>
+        
+        <div>
+        
+            <input type="button" id="submit_button" value="Submit"/>       
+            
+        
+            <input type="button" id="reset" value="reset" />
+             
+        <div>
+
+	</div>
+    
+    <div id="printCookies"></div>
+
+	
+
+</body>
+</html>
